@@ -1,5 +1,5 @@
 project_id ="cicd-336010"
-names = ["test-bucket"]
+names = ["testing-bucket"]
 prefix = "cicd"
 
 
