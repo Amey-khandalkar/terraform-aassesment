@@ -3,9 +3,4 @@ module "gcs_buckets"  {
   project_id  = var.project_id
   names = var.names
   prefix = var.prefix 
-  set_admin_roles = true
-  versioning = {
-    first = true
-  }
-  
 }
