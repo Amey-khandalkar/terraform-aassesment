@@ -7,6 +7,5 @@ variable "names"{
 variable "prefix"{
     type = string
 }
-variable "admin"{
-    type = list(string)
-}
+
+
