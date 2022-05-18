@@ -4,8 +4,6 @@ module "gcs_buckets"  {
   names = var.names
   prefix = var.prefix 
   set_admin_roles = true
-  versioning = {
-    first = true
-  }
+  
   
 }
