@@ -32,7 +32,7 @@ module "gke" {
   node_pools = [
     {
       name           = "default-pool"
-      machine_type   = "e2-standard-4"
+      machine_type   = "e2-standard-2"
       node_locations = "${var.region}-a"
       autoscaling    = true
       #node_count         = 2
