@@ -6,17 +6,17 @@ provider "kubernetes" {
 
 
 module "gke" {
-  source                            = "terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster"
-  project_id                        = var.project_id
-  name                              = var.cluster_name
-  region                            = var.region
-  zones                             = var.zones
-  network                           = var.network
-  subnetwork                        = var.subnetwork
-  ip_range_pods                     = var.ip_range_pods
-  ip_range_services                 = var.ip_range_services
-  network_project_id                = var.project_id
-  kubernetes_version                = "1.21.10-gke.2000"
+  source             = "terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster"
+  project_id         = var.project_id
+  name               = var.cluster_name
+  region             = var.region
+  zones              = var.zones
+  network            = var.network
+  subnetwork         = var.subnetwork
+  ip_range_pods      = var.ip_range_pods
+  ip_range_services  = var.ip_range_services
+  network_project_id = var.project_id
+  #kubernetes_version                = "1.21.10-gke.2000"
   http_load_balancing               = false
   regional                          = false
   network_policy                    = false
