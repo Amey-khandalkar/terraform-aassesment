@@ -16,7 +16,7 @@ module "gke" {
   ip_range_pods                     = var.ip_range_pods
   ip_range_services                 = var.ip_range_services
   network_project_id                = var.project_id
-  kubernetes_version                = "1.21.10-gke.2000"
+  kubernetes_version                = "1.19.16-gke.14000"
   http_load_balancing               = false
   regional                          = false
   network_policy                    = false
